@@ -1,7 +1,19 @@
 {
-  "name": "movies_app_sql",
+  "name": "movies_sql",
   "version": "1.0.0",
-  "description": "A simplified database application for movies with structure and queries.",
+  "description": "A simple movie database using SQL files",
+  "scripts": {
+    "start": "echo 'No start script for SQL files project'",
+    "create-db": "psql -U postgres -c 'CREATE DATABASE movies_db;'",
+    "create-tables": "psql -U postgres -d movies_db -f ddl/create_tables.sql",
+    "seed-data": "psql -U postgres -d movies_db -f ddl/seed_data.sql",
+    "query-1": "psql -U postgres -d movies_db -f queries/1_select_actors_with_total_movies_budget.sql",
+    "query-2": "psql -U postgres -d movies_db -f queries/2_select_movies_released_in_last_5_years_with_actors_count.sql",
+    "query-3": "psql -U postgres -d movies_db -f queries/3_select_users_with_favorite_movies.sql",
+    "query-4": "psql -U postgres -d movies_db -f queries/4_select_directors_with_average_movie_budget.sql",
+    "query-5": "psql -U postgres -d movies_db -f queries/5_select_movies_by_criteria.sql",
+    "query-6": "psql -U postgres -d movies_db -f queries/6_select_movie_details_by_id.sql"
+  },
   "keywords": [
     "movies",
     "database",
@@ -9,8 +21,5 @@
     "postgresql"
   ],
   "author": "Tetiana Bilenko",
-  "license": "MIT",
-  "dependencies": {
-    "pg": "^8.7.1"
-  }
+  "license": "MIT"
 }
