@@ -116,19 +116,18 @@ Install dependencies:
 
 1. Create the tables:
    ```sh
-   psql -U postgres -c "CREATE DATABASE movies_db;"
+   npm run create-tables
      ```
 2. Fill the database with test data:
      ```sh
-     psql -U postgres -d movies_db -f ddl/seed_data.ddl
+     npm run seed-data
      ```
 
 
 ## Using
 To run SQL queries, use:
 ```sh
-psql -U postgres -d movies_db -f queries/1_select_actors_with_total_movies_budget.ddl
-
+npm run query-1
 ``` 
 
-... and other
+Replace `query-1` with the desired query script from the `queries` directory.
