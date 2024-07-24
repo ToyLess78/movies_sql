@@ -90,7 +90,7 @@ erDiagram
 
 ## Project structure
 
-movies_app_sql/  
+movies_sql/  
 ├── README.md  
 ├── queries/  
 │   ├── 1_select_actors_with_total_movies_budget.sql  
