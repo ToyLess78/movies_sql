@@ -1,4 +1,4 @@
-# Movies App
+# Movies SQL
 
 This project is a simplified database for a movie application. It includes the database structure, ER diagram, and SQL queries.
 
