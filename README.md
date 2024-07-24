@@ -114,11 +114,15 @@ Install dependencies:
 
 ### Executing SQL Scripts
 
-1. Create the tables:
+1. Create database:
+   ```sh
+   npm run create-db
+     ```
+2. Create the tables:
    ```sh
    npm run create-tables
      ```
-2. Fill the database with test data:
+3. Fill the database with test data:
      ```sh
      npm run seed-data
      ```
