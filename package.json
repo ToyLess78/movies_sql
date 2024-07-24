@@ -1,0 +1,16 @@
+{
+  "name": "movies_app_sql",
+  "version": "1.0.0",
+  "description": "A simplified database application for movies with structure and queries.",
+  "keywords": [
+    "movies",
+    "database",
+    "sql",
+    "postgresql"
+  ],
+  "author": "Tetiana Bilenko",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.7.1"
+  }
+}
